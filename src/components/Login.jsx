@@ -1,30 +1,29 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
-import "./Signup.css";
-import Login from "./Login.jsx";
-function Signup() {
-  const Submition = (e) => {
-    e.preventDefault();
-  };
+import "./Login.css";
+function Login() {
+  const Submition = () => {};
   return (
     <>
       <form method="" onSubmit={Submition}>
-        <h2>Sign Up</h2>
+        <h2>Login</h2>
         <div>
           <label htmlFor="email">Email</label>
           <input type="email" id="email" placeholder="Email Address" />
           <label htmlFor="password">Password</label>
           <input type="email" id="password" placeholder="Password" />
         </div>
-        <button type="submit">Sign Up</button>
-        <Link to={"/Login"}>Already have an Account...</Link>
+        <button type="submit">Login</button>
+        <Link to={"/Signup"}>
+          <span>Already have an Account...</span>
+        </Link>
       </form>
 
       <Routes>
-        <Route path="/Login" Component={Login} />
+        <Route path="/Signup" Component={Signup} />
       </Routes>
     </>
   );
 }
 
-export default Signup;
+export default Login;

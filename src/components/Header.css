@@ -1,4 +1,53 @@
-nav div {
-  color: white;
+nav {
   text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+ul {
+  color: white;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  color: white;
+  transition: 0.2s ease-in;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(194, 194, 194);
+}
+.orderNowButton button {
+  color: black;
+  background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.orderNowButton button:hover {
+  color: black;
+  background-color: yellow;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 330px) {
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
