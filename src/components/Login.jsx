@@ -1,8 +1,11 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import "./Login.css";
+import Signup from "./Signup";
 function Login() {
-  const Submition = () => {};
+  const Submition = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <form method="" onSubmit={Submition}>
@@ -14,9 +17,7 @@ function Login() {
           <input type="email" id="password" placeholder="Password" />
         </div>
         <button type="submit">Login</button>
-        <Link to={"/Signup"}>
-          <span>Already have an Account...</span>
-        </Link>
+        <Link to={"/Signup"}>Already have an Account...</Link>
       </form>
 
       <Routes>

@@ -8,7 +8,7 @@ function Signup() {
   };
   return (
     <>
-      <form method="" onSubmit={Submition}>
+      <form onSubmit={Submition}>
         <h2>Sign Up</h2>
         <div>
           <label htmlFor="email">Email</label>

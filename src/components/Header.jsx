@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import "./Header.css";
 import Signup from "./Signup.jsx";
+import Home from "./Home";
 function Header() {
   return (
     <>
@@ -29,7 +30,7 @@ function Header() {
       </nav>
       <Routes>
         <Route path="/Signup" Component={Signup} />
-        <Route path="/Home" />
+        <Route path="/Home" Component={Home} />
       </Routes>
     </>
   );
