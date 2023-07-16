@@ -1,0 +1,9 @@
+.visiterComp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  background-color: rgb(223, 152, 0);
+  padding: 10px;
+  color: wheat;
+}

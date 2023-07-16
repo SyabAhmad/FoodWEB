@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import VisitHistory from "./components/VisitHistory";
 function App() {
   return (
     <>
@@ -9,6 +10,9 @@ function App() {
       </div>
       <div className="hero">
         <Home />
+      </div>
+      <div className="visitHistory">
+        <VisitHistory />
       </div>
     </>
   );
