@@ -20,9 +20,9 @@ function Signup() {
         <Link to={"/Login"}>Already have an Account...</Link>
       </form>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/Login" Component={Login} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }

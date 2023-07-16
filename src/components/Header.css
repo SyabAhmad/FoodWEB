@@ -1,15 +1,16 @@
 nav {
   text-decoration: none;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
 }
 ul {
-  color: white;
+  color: black;
   list-style: none;
   display: flex;
   gap: 20px;

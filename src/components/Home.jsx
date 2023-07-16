@@ -1,28 +1,26 @@
-import React, { useState } from "react";
 import pizza from "../assets/pizza.png";
 import "./Home.css";
 const Home = () => {
-  const [value, setValue] = useState(0);
-  const RemoveItem = () => {
-    setValue((prevItem) => {
-      return (prevItem -= 1);
-    });
-  };
-  const AddItem = () => {
-    setValue((prevItem) => {
-      return (prevItem += 1);
-    });
-  };
   return (
     <>
-      <div className="panel">
-        <img src={pizza} alt="this is image" />
-        <div className="cartPanel">
-          <button onClick={RemoveItem}>Remove</button>
-          <span>{value}</span>
-          <button onClick={AddItem}>Add</button>
+      <section className="panel">
+        <div className="leftSide">
+          <div className="smallText">
+            <span className="text1">
+              You nomincate the <br />
+              stars we'll help them extend <br /> there impect.
+            </span>
+          </div>
         </div>
-      </div>
+        <div className="rightSide">
+          <div className="smallText">
+            <span className="text1">
+              You nomincate the <br />
+              stars we'll help them extend <br /> there impect.
+            </span>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

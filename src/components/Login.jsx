@@ -20,9 +20,9 @@ const Login = () => {
         <Link to={"/Signup"}>Already have an Account...</Link>
       </form>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/Signup" Component={Signup} />
-      </Routes>
+      </Routes> */}
     </>
   );
 };

@@ -7,20 +7,20 @@ function Header() {
   return (
     <>
       <nav>
-        <Link to="/Home">
+        <span to="/Home">
           <h2>FoodWEB</h2>
-        </Link>
+        </span>
 
         <div className="listLinks">
           <ul>
             <li>
-              <Link to="/Signup">Burger</Link>
+              <span to="/Signup">Burger</span>
             </li>
             <li>
-              <Link to="/Signup">Cold Drinks</Link>
+              <span to="/Signup">Cold Drinks</span>
             </li>
             <li>
-              <Link to="/Signup">Sweets</Link>
+              <span to="/Signup">Sweets</span>
             </li>
           </ul>
         </div>
@@ -28,10 +28,10 @@ function Header() {
           <button>Order Now</button>
         </div>
       </nav>
-      <Routes>
+      {/* <Routes>
         <Route path="/Signup" Component={Signup} />
         <Route path="/Home" Component={Home} />
-      </Routes>
+      </Routes> */}
     </>
   );
 }
