@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import "./Login.css";
-import Signup from "./Signup";
-function Login() {
+import Signup from "./Signup.jsx";
+const Login = () => {
   const Submition = (e) => {
     e.preventDefault();
   };
@@ -25,6 +25,6 @@ function Login() {
       </Routes>
     </>
   );
-}
+};
 
 export default Login;
